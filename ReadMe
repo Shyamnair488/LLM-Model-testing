@@ -1,0 +1,7 @@
+1. pip install subprocess
+2. visit "https://ollama.com/" and install ollama
+3. Setup Ollama from given setup or 
+4. After that install llama using "Ollama run llama3" in your command prompt.
+    (Use the version of your ollama according to your requirement.)
+
+4. The llm model will work according to your configuration of your laptop/pc etc.
