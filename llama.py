@@ -3,10 +3,10 @@ import subprocess
 
 def query_llama3(query):
     try:
-        query = f"Answer in short (minimum 1 words): {query}"   # Change the word limit of your prompt according to your intrest
+        query = f"Answer in short (minimum 100 words): {query}"   # Change the word limit of your prompt according to your intrest
         # Start the process
         process = subprocess.Popen(
-            ["ollama", "run", "llama3"], 
+            ["ollama", "run", "llama3.0:405b"], 
             stdin=subprocess.PIPE, 
             stdout=subprocess.PIPE, 
             stderr=subprocess.PIPE, 
@@ -41,14 +41,4 @@ if __name__ == '__main__':
         else:
             response = query_llama3(query)
             print(response)
-
-
-
-
-
-
 # --------------------
-            
-
-
-
